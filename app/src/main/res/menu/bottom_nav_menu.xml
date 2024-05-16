@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_news"
+        android:icon="@drawable/news"
+        android:title="@string/title_notifications" />
+
+    <item
+        android:id="@+id/navigation_channels"
+        android:icon="@drawable/channel"
+        android:title="@string/title_channels" />
+
+    <item
+        android:id="@+id/navigation_world"
+        android:icon="@drawable/world"
+        android:title="@string/title_world" />
+
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/contacts"
+        android:title="@string/title_contacts" />
+
+    <item
+        android:id="@+id/navigation_transmit"
+        android:icon="@drawable/transmit"
+        android:title="@string/title_go" />
+
+
+
+
+    <!-- 可以添加更多菜单项 -->
+</menu>
