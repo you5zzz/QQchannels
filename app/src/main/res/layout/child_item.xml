@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F6F1F1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/ddd_child"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    app:cardCornerRadius="8dp"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/image_child"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/avatar" />
+
+</androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+          <ImageView
+              android:id="@+id/image_child_small"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@drawable/horn"
+
+              tools:ignore="MissingConstraints"
+              tools:layout_editor_absoluteX="55dp"
+              tools:layout_editor_absoluteY="0dp" />
+
+          <TextView
+              android:id="@+id/text_child"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="5dp"
+              android:layout_toRightOf="@id/image_child_small"
+              android:text="公告"
+              android:textSize="19sp"
+              tools:ignore="MissingConstraints"
+              tools:layout_editor_absoluteX="80dp"
+              tools:layout_editor_absoluteY="0dp" />
+
+      </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_child_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎来到公告"
+            android:textColor="#968D8D"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="29dp" />
+
+    </LinearLayout>
+
+
+   <!-- <ImageView
+        android:id="@+id/image_child_small"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/horn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/text_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/image_child_small"
+        android:text="公告"
+        android:textSize="19sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/text_child_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到公告"
+        android:textColor="#968D8D"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="29dp" />-->
+
+</LinearLayout>
+

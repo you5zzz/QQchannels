@@ -6,23 +6,31 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+
 import android.os.Bundle;
 import android.view.MenuItem;
+
+
 
 import com.example.qqchannels.Fragment.ChannelsFragment;
 import com.example.qqchannels.Fragment.ContactsFragment;
 import com.example.qqchannels.Fragment.NewsFragment;
 import com.example.qqchannels.Fragment.TransmitFragment;
 import com.example.qqchannels.Fragment.WordFragment;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        loadFragment(new NewsFragment());
+
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -33,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_channels:
                         loadFragment(new ChannelsFragment());
+
                         return true;
                     case R.id.navigation_world:
                         loadFragment(new WordFragment());
@@ -48,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
     private void loadFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
